@@ -3,7 +3,11 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
+-- View GitSigns inline hunk
 map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "" })
+
+-- View GitSigns inline blame
+map("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", { desc = "" })
 
 -- Toggle Neo-tree (filesystem view)
 map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
