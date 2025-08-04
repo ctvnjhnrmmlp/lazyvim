@@ -3,6 +3,8 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
+map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "" })
+
 -- Toggle Neo-tree (filesystem view)
 map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
 
